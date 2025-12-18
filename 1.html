@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>veluxmedia | AI Native Consulting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        surface: '#FFFFFF',
+                        background: '#F9F7F2',       // The cream base
+                        onSurface: '#1A1A1A',        // High emphasis text
+                        onSurfaceVariant: '#5F6368', // Medium emphasis text
+                        primary: '#E87C26',          // Burnt Orange (Action color)
+                        secondary: '#D8B4FE',        // Lilac (Accent container)
+                        outline: '#E0E0E0'
+                    },
+                    fontFamily: {
+                        sans: ['"DM Sans"', 'sans-serif'], // Material-like clean sans
+                        serif: ['"Playfair Display"', 'serif'],
+                    },
+                    boxShadow: {
+                        'material-sm': '0 1px 2px 0 rgba(0,0,0,0.05)',
+                        'material-md': '0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06)',
+                        'material-lg': '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)',
+                    },
+                    borderRadius: {
+                        'xl': '1rem',
+                        '2xl': '1.5rem',
+                        '3xl': '2rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #F9F7F2;
+            color: #1A1A1A;
+        }
+        /* Smooth transitions for hover states */
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="antialiased font-sans bg-background pb-20">
+
+    <nav class="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[90%] max-w-4xl">
+        <div class="bg-surface/90 backdrop-blur-md border border-white/20 shadow-material-lg rounded-full px-6 py-3 flex justify-between items-center">
+            <a href="#" class="font-serif text-xl font-bold tracking-tight text-onSurface pl-2">veluxmedia</a>
+            
+            <div class="hidden md:flex gap-2">
+                <a href="#manifesto" class="px-4 py-2 text-sm font-medium text-onSurfaceVariant hover:bg-black/5 rounded-full transition-colors">Manifesto</a>
+                <a href="#solutions" class="px-4 py-2 text-sm font-medium text-onSurfaceVariant hover:bg-black/5 rounded-full transition-colors">Solutions</a>
+            </div>
+
+            <a href="#contact" class="bg-primary hover:bg-orange-600 text-white text-sm font-medium px-6 py-2.5 rounded-full shadow-material-sm transition-all active:scale-95">
+                Get in Touch
+            </a>
+        </div>
+    </nav>
+
+    <header class="pt-40 pb-20 px-4 flex flex-col items-center justify-center text-center">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-outline bg-white shadow-material-sm mb-8">
+            <span class="w-2 h-2 rounded-full bg-secondary"></span>
+            <span class="text-xs font-bold uppercase tracking-wider text-onSurfaceVariant">Operating Systems v2.0</span>
+        </div>
+
+        <h1 class="max-w-4xl font-serif text-6xl md:text-8xl text-onSurface leading-tight mb-8">
+            From AI Curious <br>
+            <span class="italic text-onSurfaceVariant">to AI Native.</span>
+        </h1>
+
+        <p class="max-w-2xl text-lg md:text-xl text-onSurfaceVariant leading-relaxed mb-10">
+            Morningside AI is gone. The future is <strong class="text-onSurface">veluxmedia</strong>. 
+            We stop the hype and build the infrastructure for the next decade of growth.
+        </p>
+
+        <div class="flex flex-col md:flex-row gap-4">
+            <button class="bg-onSurface text-white px-8 py-4 rounded-full font-medium text-lg shadow-material-md hover:shadow-material-lg transition-all active:scale-95">
+                Start the Transformation
+            </button>
+            <button class="bg-surface text-onSurface border border-outline px-8 py-4 rounded-full font-medium text-lg shadow-material-sm hover:bg-gray-50 transition-all">
+                Read the Manifesto
+            </button>
+        </div>
+    </header>
+
+    <section id="manifesto" class="px-4 md:px-8 max-w-7xl mx-auto mb-24">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            
+            <div class="md:col-span-8 bg-surface rounded-3xl p-8 md:p-12 shadow-material-sm border border-outline/50 card-hover">
+                <h3 class="text-primary font-bold uppercase tracking-wide text-sm mb-4">The Reality</h3>
+                <h2 class="font-serif text-3xl md:text-5xl mb-6 leading-tight">
+                    Every company now faces a choice—speed up or fall behind.
+                </h2>
+                <p class="text-onSurfaceVariant text-lg leading-relaxed">
+                    The challenges ahead are real: slowing productivity, tighter competition, and rising expectations. 
+                    Used well, AI does not replace people. It fundamentally redefines how they create value. 
+                    It sharpens how organizations think, decide, and execute.
+                </p>
+            </div>
+
+            <div class="md:col-span-4 bg-secondary/30 rounded-3xl p-8 md:p-12 flex flex-col justify-between card-hover relative overflow-hidden">
+                <div class="absolute -right-10 -top-10 w-40 h-40 bg-secondary rounded-full blur-2xl opacity-50"></div>
+                
+                <div class="relative z-10">
+                    <h3 class="font-serif text-3xl mb-4 italic">No empty promises.</h3>
+                    <p class="text-onSurface/80">
+                        Too many businesses have been left with pretty slides and failed prototypes. The margin for inefficiency is gone.
+                    </p>
+                </div>
+                <div class="relative z-10 mt-8">
+                    <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm">
+                        <svg class="w-4 h-4 text-onSurface" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-5 bg-onSurface text-surface rounded-3xl p-8 md:p-12 card-hover">
+                <h3 class="text-white/60 font-bold uppercase tracking-wide text-sm mb-4">Our Approach</h3>
+                <p class="font-serif text-2xl md:text-3xl leading-snug">
+                    "We don't just implement AI. We build AI operating systems."
+                </p>
+            </div>
+
+            <div class="md:col-span-7 bg-surface rounded-3xl p-8 md:p-12 shadow-material-sm border border-outline/50 card-hover">
+                <h3 class="text-primary font-bold uppercase tracking-wide text-sm mb-6">What We Build</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4 p-4 rounded-2xl hover:bg-background transition-colors cursor-default">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-onSurface">Automations & Copilots</h4>
+                            <p class="text-onSurfaceVariant text-sm">Reshaping how your teams operate on a daily basis.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-4 rounded-2xl hover:bg-background transition-colors cursor-default">
+                        <div class="w-10 h-10 rounded-full bg-secondary/30 text-indigo-900 flex items-center justify-center shrink-0">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-onSurface">Fluency Training</h4>
+                            <p class="text-onSurfaceVariant text-sm">Helping your people master the tools defining the next decade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contact" class="relative py-24 px-4 overflow-hidden">
+        <div class="max-w-5xl mx-auto bg-surface rounded-[2.5rem] shadow-material-lg p-10 md:p-20 text-center relative z-10 border border-outline/30">
+            <h2 class="font-serif text-5xl md:text-6xl mb-6">The future has arrived.</h2>
+            <p class="text-xl text-onSurfaceVariant mb-10 max-w-2xl mx-auto">
+                It belongs to those who are willing to step off the sidelines and into the action.
+            </p>
+            
+            <form class="max-w-md mx-auto space-y-4">
+                <div class="relative">
+                    <input type="email" placeholder="enter your email" class="w-full bg-background border-none rounded-2xl px-6 py-4 text-onSurface placeholder-onSurfaceVariant/50 focus:ring-2 focus:ring-primary focus:outline-none transition-shadow">
+                </div>
+                <button type="button" class="w-full bg-primary text-white font-bold rounded-2xl px-6 py-4 shadow-md hover:shadow-lg hover:bg-orange-600 transition-all active:scale-95">
+                    Start Being AI-First
+                </button>
+            </form>
+
+            <div class="mt-12 pt-8 border-t border-outline flex flex-col md:flex-row justify-between items-center text-sm text-onSurfaceVariant">
+                <span class="font-serif italic text-lg text-onSurface">veluxmedia</span>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-primary transition-colors">LinkedIn</a>
+                    <a href="#" class="hover:text-primary transition-colors">Twitter</a>
+                    <span>© 2025</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-full -z-10">
+            <div class="absolute bottom-20 left-20 w-72 h-72 bg-secondary rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+            <div class="absolute bottom-20 right-20 w-72 h-72 bg-primary rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+        </div>
+    </footer>
+
+    <style>
+        @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animate-blob {
+            animation: blob 7s infinite;
+        }
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+    </style>
+
+</body>
+</html>
